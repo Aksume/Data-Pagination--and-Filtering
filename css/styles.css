@@ -4,27 +4,21 @@
 * {
 	box-sizing: border-box;
 }
-
 body {
 	font-family: 'Montserrat', Helvetica, sans-serif;
 	background-color: rgb(229, 238, 250);
   transition: 0.4s;
 }
-
 ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-
 .page {
   max-width: 1024px;
   margin: auto;
   width: 95%;
 }
-
-
-
 header {
   text-align: center;
 	display: flex;
@@ -32,7 +26,6 @@ header {
   justify-content: center;
 	padding: 2em 0;
 }
-
 header h2 {
   font-size: 36px;
   text-transform: uppercase;
@@ -41,13 +34,9 @@ header h2 {
   letter-spacing: 2px;
 	margin-bottom: 25px;
 }
-
-
-
 .student-search {
   display: flex;
 }
-
 .student-search input {
   width: 100%;
   border-radius: 4px 0 0 4px;
@@ -55,11 +44,9 @@ header h2 {
   padding: 10px 16px;
   font-size: 14px;
 }
-
 .student-search input::placeholder {
   color: #929b9e;
 }
-
 .student-search button {
   cursor: pointer;
   width: 55px;
@@ -71,17 +58,14 @@ header h2 {
   background-color: #1e90ff;
   color: #fff;
 }
-
 .student-search button img {
   width: 25px;
 }
-
 .student-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   grid-gap: 2em;
 }
-
 .student-item {
   text-align: center;
   display: flex;
@@ -93,7 +77,6 @@ header h2 {
   -webkit-transition: box-shadow .3s ease;
   transition: box-shadow .3s ease;
 }
-
 .avatar {
   margin: 0 auto;
   border-radius: 50%;
@@ -103,7 +86,6 @@ header h2 {
 	height: 90px;
 	margin: auto auto 15px;
 }
-
 .student-details::before {
 	content: '';
 	position: absolute;
@@ -112,21 +94,18 @@ header h2 {
 	background: rgba(30, 144, 255, 0.25);
 	border-radius: 50%;
 }
-
 .student-item h3 {
 	font-weight: 600;
 	font-size: 1.2rem;
   margin-bottom: 0.45em;
   color: #1e90ff;
 }
-
 .student-item .email {
 	font-weight: 600;
   color: #6d778a;
   font-size: 14px;
   letter-spacing: .5px;
 }
-
 .date {
 	display: block;
   font-size: 14px;
@@ -137,61 +116,35 @@ header h2 {
   border-top: solid 1px #dcdcdc;
   margin-top: 1.1em;
 }
-
-
-
 .pagination {
   margin: 30px 0 60px;
   text-align: center;
 }
-
 .pagination li {
   display: inline;
   padding: 0 3px;
 }
-
 .pagination li button {
-  /* font-size: 1em;
-  cursor: pointer;
-	outline: none;
-	padding: 0.5em 0.85em;
-	background: #fff;
-  border: none;
-  border-radius: 3px;
-  text-decoration: none;
-	color: #1e90ff;
-	box-shadow: 0 1px 8px 0 rgba(22, 42, 90, 0.05);
-	transition: 0.4s; */
-  /* new */
   width: 50px;
 	height: 50px;
-
 	appearance: none;
 	border: none;
 	outline: none;
 	cursor: pointer;
-
 	background-color: #44AAEE;
-
 	margin: 5px;
 	transition: 0.4s;
-
 	color: #FFF;
 	font-size: 18px;
 	text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
 	box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
 }
-
 .pagination li button.active, .pagination li button:hover {
   /* background-color: #1e90ff;
   color: #fff; */
   background-color: #44EEAA;
 	box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.2);
 }
-
-
-
-
 .student-search span {
   position: absolute;
   clip: rect(1px, 1px, 1px, 1px);
@@ -201,9 +154,6 @@ header h2 {
   width: 1px;
   overflow: hidden;
 }
-
-
-
 .no-results {
 	font-family: 'Nunito', sans-serif;
 	display: block;
@@ -213,26 +163,19 @@ header h2 {
 	margin-top: 15px;
 	margin-bottom: 15px;
 }
-
-
-
 @media screen and (min-width: 700px) {
-
 	.page {
 		width: 70%;
-	}
-	
+	}	
 	header {
 		flex-flow: row;
 		align-items: center;
 		padding: 3em 0;
-	}
-	
+	}	
 	header h2 {
     margin-right: auto;
 		margin-bottom: 0;
 	}
-
 	.student-item {
 		border-radius: 5px;
 		box-shadow: 0 4px 16px 0 rgba(22, 42, 90, 0.09);
